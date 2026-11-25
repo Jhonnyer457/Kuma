@@ -342,12 +342,10 @@ class AnilistHomeViewModel : ViewModel() {
         Anilist.getSavedToken()
         MAL.getSavedToken()
         Discord.getSavedToken()
-        if (!BuildConfig.FLAVOR.contains("fdroid")) {
-            if (PrefManager.getVal(PrefName.CheckUpdate))
-                context.lifecycleScope.launch(Dispatchers.IO) {
-                    AppUpdater.check(context, false)
-                }
-        }
+        if (PrefManager.getVal(PrefName.CheckUpdate))
+            context.lifecycleScope.launch(Dispatchers.IO) {
+                AppUpdater.check(context, false)
+            }
         val rescueMode: Boolean = PrefManager.getVal(PrefName.RescueMode)
         if (rescueMode) {
             if (MAL.token != null) tryWithSuspend { MAL.query.getUserData() }

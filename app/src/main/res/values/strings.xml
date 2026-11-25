@@ -22,10 +22,10 @@
     <string name="torrent_no_results">No results found.</string>
     <string name="play_via_torrent_magnet">Play via Torrent / Magnet</string>
 
-    <string name="repo" translatable="false">rebelonion/Dantotsu</string>
+    <string name="repo" translatable="false">Jhonnyer457/Kuma</string>
     <string name="preference_file_key" translatable="false">dantotsuprefs</string>
 
-    <string name="app_name" translatable="false">Dantotsu</string>
+    <string name="app_name" translatable="false">Kuma</string>
     <string name="slogan">The NEW Best Anime &amp; Manga app for Android.</string>
 
     <string name="login">Login</string>
@@ -33,7 +33,7 @@
 
     <string name="dantotsu" translatable="false">https://dantotsu.app/</string>
     <string name="discord" translatable="false">https://discord.gg/4HPZ5nAWwM</string>
-    <string name="github" translatable="false">https://github.com/rebelonion/Dantotsu</string>
+    <string name="github" translatable="false">https://github.com/Jhonnyer457/Kuma</string>
     <string name="telegram" translatable="false" tools:ignore="Typos">https://t.me/+gzBCQExtLQo1YTNh </string>
     <string name="coffee" translatable="false">https://github.com/sponsors/rebelonion</string>
 
@@ -494,7 +494,7 @@
     <string name="discord_dantotsu_button">Display dantotsu in the second button</string>
     <string name="discord_anilist_button">Display your AniList profile instead</string>
     <string name="discord_rich_presence">Discord Rich Presence</string>
-    <string name="stream_on_dantotsu">Stream on Dantotsu</string>
+    <string name="stream_on_dantotsu">Stream on Kuma</string>
     <string name="view_my_anilist">View My AniList</string>
     <string name="view_my_mal">View My MAL</string>
     <string name="discord_preview">Preview</string>
@@ -508,7 +508,7 @@
     <string name="discord_manga_presence">Manga Presence</string>
     <string name="discord_disable_adult_media_rpc">Disable RPC on adult media</string>
     <string name="discord_no_tracker_link">No Tracker Link (Hidden)</string>
-    <string name="view_profile_in_dantotsu">Dantotsu Profile</string>
+    <string name="view_profile_in_dantotsu">Kuma Profile</string>
     <string name="discord_view_profile">View Profile</string>
 
     <string name="jobless_message">DAMN! YOU TRULY ARE JOBLESS\nYOU REACHED THE END</string>
@@ -626,8 +626,8 @@
     <string name="type_source">SOURCE</string>
     <string name="type_contains">CONTAINS</string>
 
-    <string name="read_on_dantotsu">Read on Dantotsu</string>
-    <string name="watch_on_dantotsu">Watch on Dantotsu</string>
+    <string name="read_on_dantotsu">Read on Kuma</string>
+    <string name="watch_on_dantotsu">Watch on Kuma</string>
 
     <string name="continue_episode">Continue : Episode %1$s%2$s\n%3$s</string>
     <string name="filler_tag"> - Filler</string>

@@ -8,6 +8,10 @@ Dantotsu (Kotlin, Gradle KTS, AGP 9.5.1, Gradle 9.9.0, JDK 21, módulo único `:
 - **Firma**: `signingConfigs.ci` en `app/build.gradle.kts`, alimentada por las variables `CI_KEYSTORE_PATH`, `KEY_ALIAS`, `STORE_PASSWORD`, `KEY_PASSWORD` (desde GitHub Secrets). Nunca se genera un keystore en compilaciones normales.
 - **Versión**: `versionName` = versión del manifiesto de la entrega; `versionCode` = número de entrega (siempre creciente).
 - **Publicación atómica**: se integra y compila antes de hacer commit; solo si compila y la firma coincide con el keystore se hace push, se crea el tag `vX.Y.Z` y la Release.
+- **Identidad**: `applicationId = com.kuma.app`; `namespace = ani.dantotsu` se mantiene (renombrar los ~500 archivos de código no aporta nada y aumenta el riesgo de romper la compilación).
+- **Cosas de Dantotsu que NO se renombran a propósito**: esquema `dantotsu://` (redirección del login de AniList/MAL/Discord), nombres internos de preferencias/acciones (`ani.dantotsu.*`) y carpetas de descargas hasta decidir lo contrario.
+- **Actualizaciones**: `src/fdroid/.../AppUpdater.kt` lee `https://api.github.com/repos/<R.string.repo>/releases/latest`, compara la etiqueta (`vX.Y.Z`) con `BuildConfig.VERSION_NAME` y descarga la APK cuya ABI coincide con el dispositivo (nombres `vX.Y.Z-app-fdroid-<abi>-release.apk`). Requiere Releases públicas.
+- **Iconos**: foreground/monocromo PNG en `drawable-nodpi`, fondo adaptativo `#0A0E0F`, notificación en `drawable-*dpi/notification_icon.png`. `anim_splash` debe seguir siendo `Animatable` (MainActivity y SettingsActivity hacen `as Animatable`).
 - Los workflows (`.github/workflows/`) se editan a mano: el token de Actions no puede modificarlos. Las entregas ZIP los rechazan.
 - Scripts de CI en `ci/` (no `scripts/`, que está en `.gitignore`).
 

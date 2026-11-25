@@ -153,13 +153,11 @@ class SettingsActivity : AppCompatActivity() {
 
     private fun setupSocialButtonsAndLinks() {
         binding.apply {
-            if (!BuildConfig.FLAVOR.contains("fdroid")) {
-                settingsLogo.setOnLongClickListener {
-                    lifecycleScope.launch(Dispatchers.IO) {
-                        AppUpdater.check(this@SettingsActivity, true)
-                    }
-                    true
+            settingsLogo.setOnLongClickListener {
+                lifecycleScope.launch(Dispatchers.IO) {
+                    AppUpdater.check(this@SettingsActivity, true)
                 }
+                true
             }
 
             settingBuyMeCoffee.setOnClickListener {
@@ -224,7 +222,7 @@ class SettingsActivity : AppCompatActivity() {
     private fun checkIfOutdated() {
         lifecycleScope.launch(Dispatchers.IO) {
             try {
-                val res = client.get("https://api.github.com/repos/itsmechinmoy/dantotsu-updater/releases/latest")
+                val res = client.get("https://api.github.com/repos/${getString(R.string.repo)}/releases/latest")
                 if (res.code == 200) {
                     val json = Mapper.json.parseToJsonElement(res.text).jsonObject
                     val tagName = json["tag_name"]?.jsonPrimitive?.contentOrNull
@@ -235,7 +233,7 @@ class SettingsActivity : AppCompatActivity() {
                                 BuildConfig.VERSION_NAME
                             )
                             binding.settingsVersion.setOnClickListener {
-                                openLinkInBrowser("https://github.com/itsmechinmoy/dantotsu-updater/releases/latest")
+                                openLinkInBrowser("https://github.com/${getString(R.string.repo)}/releases/latest")
                             }
                         }
                     }

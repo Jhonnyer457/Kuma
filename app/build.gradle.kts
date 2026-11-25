@@ -53,7 +53,7 @@ android {
     compileSdkMinor = 2
 
     defaultConfig {
-        applicationId = "ani.dantotsu"
+        applicationId = "com.kuma.app"
         minSdk = 26
         targetSdk = 36
 

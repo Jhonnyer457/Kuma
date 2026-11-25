@@ -65,8 +65,7 @@ class SettingsAboutActivity : AppCompatActivity() {
                         isChecked = PrefManager.getVal(PrefName.CheckUpdate),
                         switch = { isChecked, _ ->
                             PrefManager.setVal(PrefName.CheckUpdate, isChecked)
-                        },
-                        isVisible = !BuildConfig.FLAVOR.contains("fdroid")
+                        }
                     ),
                     Settings(
                         type = 2,

@@ -315,7 +315,7 @@
             android:excludeFromRecents="true"
             android:exported="true"
             android:launchMode="singleTask">
-            <intent-filter android:label="Anilist Login for Dantotsu">
+            <intent-filter android:label="Anilist Login for Kuma">
                 <action android:name="android.intent.action.VIEW" />
 
                 <category android:name="android.intent.category.DEFAULT" />
@@ -332,7 +332,7 @@
             android:excludeFromRecents="true"
             android:exported="true"
             android:launchMode="singleTask">
-            <intent-filter android:label="Myanimelist Login for Dantotsu">
+            <intent-filter android:label="Myanimelist Login for Kuma">
                 <action android:name="android.intent.action.VIEW" />
 
                 <category android:name="android.intent.category.DEFAULT" />
@@ -349,7 +349,7 @@
             android:excludeFromRecents="true"
             android:exported="true"
             android:launchMode="singleTask">
-            <intent-filter android:label="Discord Login for Dantotsu">
+            <intent-filter android:label="Discord Login for Kuma">
                 <action android:name="android.intent.action.VIEW" />
 
                 <category android:name="android.intent.category.DEFAULT" />
@@ -365,7 +365,7 @@
             android:excludeFromRecents="true"
             android:exported="true"
             android:launchMode="singleTask">
-            <intent-filter android:label="Discord Login for Dantotsu">
+            <intent-filter android:label="Discord Login for Kuma">
                 <action android:name="android.intent.action.VIEW" />
 
                 <category android:name="android.intent.category.DEFAULT" />
@@ -383,7 +383,7 @@
             android:excludeFromRecents="true"
             android:exported="true"
             android:launchMode="singleTask">
-            <intent-filter android:label="Open in Dantotsu">
+            <intent-filter android:label="Open in Kuma">
                 <action android:name="android.intent.action.VIEW" />
 
                 <category android:name="android.intent.category.DEFAULT" />
@@ -417,7 +417,7 @@
                     android:host="profile"
                     android:scheme="dantotsu" />
             </intent-filter>
-            <intent-filter android:label="Open in Dantotsu">
+            <intent-filter android:label="Open in Kuma">
                 <action android:name="android.intent.action.VIEW" />
 
                 <category android:name="android.intent.category.DEFAULT" />

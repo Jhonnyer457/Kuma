@@ -8,5 +8,15 @@
     "sha256": "fa7f6723fa205c3527600e957a4395573d16485cb9899d342e5bc9aca54aefb2",
     "fecha": "2026-11-25 01:02 UTC",
     "archivo": "deliveries/processed/entrega-001_v0.1.0_base.zip"
+  },
+  {
+    "entrega": 2,
+    "version": "0.2.0",
+    "tag": "v0.2.0",
+    "tipo": "incremental",
+    "titulo": "Rebranding Kuma: nombre, paquete, iconos y actualizador",
+    "sha256": "a47a3c58a67b41508582797cfa527262308c6545fec1d5334fada317f6aa0127",
+    "fecha": "2026-11-25 05:32 UTC",
+    "archivo": "deliveries/processed/entrega-002_v0.2.0_rebranding-kuma.zip"
   }
 ]

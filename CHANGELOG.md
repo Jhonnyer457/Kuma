@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.2.0] - 2026-11-25 (entrega 002) — Rebranding Kuma: nombre, paquete, iconos y actualizador
+
+### Añadido
+- Iconos de Kuma: launcher adaptativo, icono monocromo (iconos temáticos), icono de notificaciones, logo interno y splash
+- Actualizador propio: busca nuevas versiones en las Releases de Jhonnyer457/Kuma y descarga la APK de la ABI del dispositivo
+- Opción 'Buscar actualizaciones' y comprobación manual (mantener pulsado el logo en Ajustes) disponibles en esta compilación
+
+### Cambiado
+- Nombre de la app: Kuma
+- Paquete (applicationId): com.kuma.app
+- Enlaces del repositorio y de GitHub apuntan a Jhonnyer457/Kuma
+- Textos visibles 'Leer/Ver/Stream en Kuma', 'Perfil de Kuma' y etiquetas del manifiesto
+
 ## [0.1.0] - 2026-11-25 (entrega 001) — Base Dantotsu + infraestructura CI/CD
 
 ### Añadido

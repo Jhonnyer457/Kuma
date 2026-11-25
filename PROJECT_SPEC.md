@@ -1,11 +1,16 @@
 # Especificación del proyecto
 
-> Documento principal de referencia. Pendiente de completar con el PROMPT DEFINITIVO de la app.
+> Documento principal de referencia. Se completa con el PROMPT DEFINITIVO de las funciones nuevas.
 
-## Punto de partida (declarado por el usuario)
-- App Android personal e independiente, basada en el código de Dantotsu.
-- Nombre nuevo, iconos nuevos y funciones nuevas (por definir).
-- Uso personal. Todo el trabajo se hace desde el teléfono; compilación solo con GitHub Actions.
+## Identidad (definida por el usuario)
+- Nombre de la app: **Kuma**
+- Paquete (applicationId): **com.kuma.app**
+- Repositorio (y fuente de actualizaciones): **Jhonnyer457/Kuma**
+- Logos: `Kuma1.jpg` (logo con nombre) y `Kuma2.jpg` (solo el oso). Se usan para icono de la app, icono monocromo (iconos temáticos), iconos de notificación, logo interno y splash.
+- Base: código de Dantotsu (UPL = GPLv3). Uso personal, independiente.
 
-## Requisitos
-_Sin definir todavía: se añadirán aquí cuando se entregue el prompt definitivo._
+## Requisitos acordados
+1. App Android personal e independiente basada en Dantotsu, desarrollada por entregas ZIP y compilada solo con GitHub Actions (todo desde el teléfono).
+2. La app debe buscar actualizaciones en las Releases de `Jhonnyer457/Kuma`.
+3. Traducir toda la app a español (etapa posterior, aún no iniciada).
+4. Funciones nuevas: por definir.
