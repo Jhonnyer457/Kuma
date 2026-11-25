@@ -175,7 +175,11 @@
 #############################################
 # ML Kit Text Recognition
 #############################################
--keep class com.google.mlkit.vision.** { *; }
--dontwarn com.google.mlkit.vision.**
--keep class com.google.android.gms.internal.mlkit_vision_text** { *; }
--dontwarn com.google.android.gms.internal.mlkit_vision_text**
+-keep class com.google.mlkit.** { *; }
+-dontwarn com.google.mlkit.**
+-keep class com.google.android.gms.internal.mlkit_common** { *; }
+-dontwarn com.google.android.gms.internal.mlkit_common**
+-keep class com.google.android.gms.internal.mlkit_vision** { *; }
+-dontwarn com.google.android.gms.internal.mlkit_vision**
+-keep class com.google.firebase.components.** { *; }
+-keep class * implements com.google.firebase.components.ComponentRegistrar { *; }
