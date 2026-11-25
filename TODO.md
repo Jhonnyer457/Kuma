@@ -2,7 +2,8 @@
 
 - [x] Primera ejecución real en GitHub (entrega 001: compila e instala).
 - [x] Compilar la entrega 002 (compila e instala).
-- [ ] Corregir el cierre de la app al abrirla (ver Descargas/Kuma-crash.txt tras instalar la 003).
+- [x] Cierre al abrir: corregido con reglas de R8 para ML Kit.
+- [x] Carpetas, copias de seguridad y textos principales con nombre Kuma; donaciones ocultas (entrega 005, pendiente de probar).
 - [x] Nombre de la app: Kuma.
 - [ ] Entregar el prompt definitivo con las funciones nuevas (`PROJECT_SPEC.md`).
 - [x] Entrega 002: nombre, applicationId, iconos, actualizador.

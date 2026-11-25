@@ -213,7 +213,7 @@ class DiscordDialogFragment : BottomSheetDialogFragment() {
             }
 
             binding.previewButton2.text = when (mode) {
-                "dantotsu" -> "DANTOTSU PROFILE"
+                "dantotsu" -> "KUMA PROFILE"
                 else -> "VIEW PROFILE"
             }
         }

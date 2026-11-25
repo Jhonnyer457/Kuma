@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.3.0] - 2026-11-25 (entrega 005) — Identidad Kuma: carpetas, copias de seguridad, textos y sin donaciones
+
+### Cambiado
+- Descargas, capturas, copias de seguridad automaticas y manuales usan la carpeta/nombre Kuma en vez de Dantotsu
+- Textos visibles (menu Acerca de, preguntas frecuentes, ajustes, notificaciones, widget, Discord) dicen Kuma; se conservan los creditos y la licencia de Dantotsu
+- Reglas de R8 para ML Kit (app/proguard-rules.pro) incluidas en el proyecto
+- Eliminadas las donaciones (boton Sponsor, objetivo de donacion y aviso aleatorio)
+- Politica de privacidad de Dantotsu e iconos de Discord/Forgejo de Dantotsu ocultos
+
+### Corregido
+- La app ya no se cierra al arrancar (R8 eliminaba piezas de ML Kit)
+
 ## [0.2.2] - 2026-11-25 (entrega 004) — Diagnostico del cierre al arrancar (volcado de error a Descargas)
 
 ### Añadido

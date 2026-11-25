@@ -59,6 +59,7 @@
 
             <ImageView
                 android:id="@+id/loginDiscord"
+                android:visibility="gone"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:layout_margin="8dp"

@@ -150,6 +150,7 @@ class SettingsAboutActivity : AppCompatActivity() {
                         name = getString(R.string.privacy_policy),
                         desc = getString(R.string.privacy_policy_desc),
                         icon = R.drawable.ic_incognito_24,
+                        isVisible = false,
                         onClick = {
                             val text = TextView(context)
                             val pPLink =

@@ -46,7 +46,7 @@ class PlayerScreenshotManager(
         captureBitmap(surfaceView) { bitmap ->
             if (bitmap != null) {
                 val timeStamp = SimpleDateFormat("yyyyMMdd_HHmmss", Locale.US).format(Date())
-                val cleanTitle = animeTitle?.replace(Regex("[^a-zA-Z0-9.-]"), "_")?.take(30) ?: "Dantotsu"
+                val cleanTitle = animeTitle?.replace(Regex("[^a-zA-Z0-9.-]"), "_")?.take(30) ?: "Kuma"
                 val epSuffix = if (!episodeNum.isNullOrBlank()) "_EP$episodeNum" else ""
                 val fileName = "${cleanTitle}${epSuffix}_${timeStamp}.png"
 
@@ -119,7 +119,7 @@ class PlayerScreenshotManager(
                 val contentValues = ContentValues().apply {
                     put(MediaStore.Images.Media.DISPLAY_NAME, fileName)
                     put(MediaStore.Images.Media.MIME_TYPE, "image/png")
-                    put(MediaStore.Images.Media.RELATIVE_PATH, "${Environment.DIRECTORY_PICTURES}/Dantotsu")
+                    put(MediaStore.Images.Media.RELATIVE_PATH, "${Environment.DIRECTORY_PICTURES}/Kuma")
                     put(MediaStore.Images.Media.IS_PENDING, 1)
                 }
 
@@ -138,7 +138,7 @@ class PlayerScreenshotManager(
             } else {
                 val picturesDir = File(
                     Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES),
-                    "Dantotsu"
+                    "Kuma"
                 )
                 if (!picturesDir.exists()) picturesDir.mkdirs()
                 val imageFile = File(picturesDir, fileName)

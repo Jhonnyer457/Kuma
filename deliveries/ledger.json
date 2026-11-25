@@ -38,5 +38,15 @@
     "sha256": "8153ced250ed4bea0eb9bcdca3a18fb74261efb5f1a8a26e48c22fe52ce4fc34",
     "fecha": "2026-11-25 07:13 UTC",
     "archivo": "deliveries/processed/entrega-004.zip"
+  },
+  {
+    "entrega": 5,
+    "version": "0.3.0",
+    "tag": "v0.3.0",
+    "tipo": "incremental",
+    "titulo": "Identidad Kuma: carpetas, copias de seguridad, textos y sin donaciones",
+    "sha256": "14b51a9dad81c789bc26a3241a3116582dd82cfa7baf95a2ba518bdb0987ce41",
+    "fecha": "2026-11-25 10:25 UTC",
+    "archivo": "deliveries/processed/entrega-005_v0.3.0_identidad-kuma.zip"
   }
 ]

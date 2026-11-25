@@ -45,7 +45,7 @@ class DownloadCompat {
             }
             val directory = File(
                 currContext()?.getExternalFilesDir(Environment.DIRECTORY_DOWNLOADS),
-                "Dantotsu/$type/${downloadedType.titleName}"
+                "Kuma/$type/${downloadedType.titleName}"
             )
             //load media.json and convert to media class with gson
             return try {
@@ -238,7 +238,7 @@ class DownloadCompat {
         ): List<MangaChapter> {
             val directory = File(
                 currContext()?.getExternalFilesDir(Environment.DIRECTORY_DOWNLOADS),
-                "Dantotsu/Manga/$mangaLink"
+                "Kuma/Manga/$mangaLink"
             )
             //get all of the folder names and add them to the list
             val chapters = mutableListOf<MangaChapter>()
@@ -266,7 +266,7 @@ class DownloadCompat {
         suspend fun loadImagesCompat(chapterLink: String, sChapter: SChapter): List<MangaImage> {
             val directory = File(
                 currContext()?.getExternalFilesDir(Environment.DIRECTORY_DOWNLOADS),
-                "Dantotsu/Manga/$chapterLink"
+                "Kuma/Manga/$chapterLink"
             )
             val images = mutableListOf<MangaImage>()
             val imageNumberRegex = Regex("""(\d+)\.jpg$""")
@@ -329,7 +329,7 @@ class DownloadCompat {
             }
             val directory = File(
                 context.getExternalFilesDir(Environment.DIRECTORY_DOWNLOADS),
-                "Dantotsu/$subDirectory/$title"
+                "Kuma/$subDirectory/$title"
             )
             if (directory.exists()) {
                 directory.deleteRecursively()
@@ -341,17 +341,17 @@ class DownloadCompat {
             val directory = if (downloadedType.type == MediaType.MANGA) {
                 File(
                     context.getExternalFilesDir(Environment.DIRECTORY_DOWNLOADS),
-                    "Dantotsu/Manga/${downloadedType.titleName}/${downloadedType.chapterName}"
+                    "Kuma/Manga/${downloadedType.titleName}/${downloadedType.chapterName}"
                 )
             } else if (downloadedType.type == MediaType.ANIME) {
                 File(
                     context.getExternalFilesDir(Environment.DIRECTORY_DOWNLOADS),
-                    "Dantotsu/Anime/${downloadedType.titleName}/${downloadedType.chapterName}"
+                    "Kuma/Anime/${downloadedType.titleName}/${downloadedType.chapterName}"
                 )
             } else {
                 File(
                     context.getExternalFilesDir(Environment.DIRECTORY_DOWNLOADS),
-                    "Dantotsu/Novel/${downloadedType.titleName}/${downloadedType.chapterName}"
+                    "Kuma/Novel/${downloadedType.titleName}/${downloadedType.chapterName}"
                 )
             }
 
@@ -369,7 +369,7 @@ class DownloadCompat {
             }
         }
 
-        private val animeLocation = "Dantotsu/Anime"
+        private val animeLocation = "Kuma/Anime"
 
         private data class CompatMediaInfo(
             val type: String,
@@ -390,7 +390,7 @@ class DownloadCompat {
             }
             val directory = File(
                 currContext()?.getExternalFilesDir(Environment.DIRECTORY_DOWNLOADS),
-                "Dantotsu/$type/${downloadedType.titleName}"
+                "Kuma/$type/${downloadedType.titleName}"
             )
             return try {
                 val mediaModel = loadMediaCompat(downloadedType) ?: return null

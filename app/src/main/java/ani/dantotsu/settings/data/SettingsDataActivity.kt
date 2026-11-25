@@ -126,7 +126,7 @@ class SettingsDataActivity : AppCompatActivity() {
     }
 
     private fun getReadableDownloadPath(uriString: String): String {
-        val defaultPath = "${Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS).path}/Dantotsu"
+        val defaultPath = "${Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS).path}/Kuma"
         if (uriString.isBlank()) return defaultPath
 
         return try {
@@ -349,7 +349,7 @@ class SettingsDataActivity : AppCompatActivity() {
                     val exportableLocations = Location.entries.filter { it.exportable }
                     val timestampStr = SimpleDateFormat("yyyy-MM-dd_HH-mm", Locale.getDefault()).format(Date())
                     savePrefsToDownloads(
-                        "Dantotsu_${timestampStr}",
+                        "Kuma_${timestampStr}",
                         PrefManager.exportAllPrefs(exportableLocations),
                         context
                     )
