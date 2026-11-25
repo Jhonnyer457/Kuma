@@ -28,5 +28,15 @@
     "sha256": "0b44063aacf49c89e111f18fd4af4bdfc0a59130689c04d043662983b89dd8f5",
     "fecha": "2026-11-25 06:02 UTC",
     "archivo": "deliveries/processed/entrega-003_v0.2.1_diagnostico.zip"
+  },
+  {
+    "entrega": 4,
+    "version": "0.2.2",
+    "tag": "v0.2.2",
+    "tipo": "incremental",
+    "titulo": "Diagnostico del cierre al arrancar (volcado de error a Descargas)",
+    "sha256": "8153ced250ed4bea0eb9bcdca3a18fb74261efb5f1a8a26e48c22fe52ce4fc34",
+    "fecha": "2026-11-25 07:13 UTC",
+    "archivo": "deliveries/processed/entrega-004.zip"
   }
 ]

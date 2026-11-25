@@ -1,9 +1,9 @@
 # Estado del proyecto
 
 <!-- AUTO:START -->
-- Última entrega: 003 — Diagnostico del cierre al arrancar (volcado de error a Descargas)
-- Última versión: 0.2.1 (`v0.2.1`)
-- Integrada: 2026-11-25 06:02 UTC
+- Última entrega: 004 — Diagnostico del cierre al arrancar (volcado de error a Descargas)
+- Última versión: 0.2.2 (`v0.2.2`)
+- Integrada: 2026-11-25 07:13 UTC
 <!-- AUTO:END -->
 
 ## Terminado
