@@ -10,7 +10,12 @@ if (gradle.startParameter.taskNames.any { it.contains("google", true) }) {
     apply(plugin = "com.google.firebase.crashlytics")
 }
 
-val baseVersion = "3.2.2"
+// --- Version e identidad de firma controladas por CI (GitHub Actions) ---
+// CI pasa -PappVersionName y -PappVersionCode; en local usa valores de desarrollo.
+val appVersionName: String = (findProperty("appVersionName") as String?) ?: "0.0.0-dev"
+val appVersionCode: Int = (findProperty("appVersionCode") as String?)?.toIntOrNull() ?: 1
+// Firma: variables de entorno inyectadas por el workflow desde los GitHub Secrets.
+val ciKeystorePath: String? = System.getenv("CI_KEYSTORE_PATH")
 
 fun computeGitCommitHash(): String {
     val envHash = System.getenv("COMMIT_HASH")
@@ -52,14 +57,21 @@ android {
         minSdk = 26
         targetSdk = 36
 
-        versionName = if (gitCommitHash.isNotEmpty()) "$baseVersion+$gitCommitHash" else baseVersion
-        versionCode = baseVersion.split(".")
-            //noinspection WrongGradleMethod
-            .map { it.toInt() * 100 }
-            .joinToString("")
-            .toInt()
+        versionName = appVersionName
+        versionCode = appVersionCode
 
         signingConfig = signingConfigs.getByName("debug")
+    }
+
+    signingConfigs {
+        if (!ciKeystorePath.isNullOrBlank()) {
+            create("ci") {
+                storeFile = file(ciKeystorePath)
+                storePassword = System.getenv("STORE_PASSWORD")
+                keyAlias = System.getenv("KEY_ALIAS")
+                keyPassword = System.getenv("KEY_PASSWORD")
+            }
+        }
     }
 
     splits {
@@ -106,6 +118,7 @@ android {
         }
 
         getByName("release") {
+            signingConfig = signingConfigs.findByName("ci") ?: signingConfigs.getByName("debug")
             manifestPlaceholders["icon_placeholder"] = "@mipmap/ic_launcher"
             manifestPlaceholders["icon_placeholder_round"] = "@mipmap/ic_launcher_round"
             isDebuggable = false

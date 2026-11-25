@@ -1,0 +1,12 @@
+[
+  {
+    "entrega": 1,
+    "version": "0.1.0",
+    "tag": "v0.1.0",
+    "tipo": "base",
+    "titulo": "Base Dantotsu + infraestructura CI/CD",
+    "sha256": "fa7f6723fa205c3527600e957a4395573d16485cb9899d342e5bc9aca54aefb2",
+    "fecha": "2026-11-25 01:02 UTC",
+    "archivo": "deliveries/processed/entrega-001_v0.1.0_base.zip"
+  }
+]

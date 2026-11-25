@@ -1,0 +1,5 @@
+{
+  "app_name": "Dantotsu Personal",
+  "gradle_task": "assembleFdroidRelease",
+  "apk_dir": "app/build/outputs/apk/fdroid/release"
+}
