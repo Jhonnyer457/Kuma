@@ -70,6 +70,11 @@ class App : Application(), GraphProvider<AppGraph> {
 
     val mFTActivityLifecycleCallbacks = FTActivityLifecycleCallbacks()
 
+    override fun attachBaseContext(base: Context) {
+        super.attachBaseContext(base)
+        ani.dantotsu.util.EarlyCrashDump.install(base)
+    }
+
     @OptIn(DelicateCoroutinesApi::class)
     override fun onCreate() {
         super.onCreate()

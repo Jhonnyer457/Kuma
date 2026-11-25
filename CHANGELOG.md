@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.2.1] - 2026-11-25 (entrega 003) — Diagnostico del cierre al arrancar (volcado de error a Descargas)
+
+### Añadido
+- Si la app se cierra por un error, guarda el detalle en Descargas/Kuma-crash.txt para poder diagnosticarlo desde el telefono (no envia nada a Internet)
+
+### Cambiado
+- Documentacion del proyecto actualizada con el problema conocido y el nuevo plan de entregas
+
 ## [0.2.0] - 2026-11-25 (entrega 002) — Rebranding Kuma: nombre, paquete, iconos y actualizador
 
 ### Añadido

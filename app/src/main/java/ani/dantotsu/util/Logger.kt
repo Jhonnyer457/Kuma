@@ -202,6 +202,7 @@ class FinalExceptionHandler : Thread.UncaughtExceptionHandler {
     private val MAX_STACK_TRACE_SIZE = 131071 //128 KB - 1
 
     override fun uncaughtException(t: Thread, e: Throwable) {
+        EarlyCrashDump.dump(t, e)
         val stackTraceString = Log.getStackTraceString(e)
         Injekt.get<CrashlyticsInterface>().logException(e)
 

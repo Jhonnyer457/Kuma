@@ -12,6 +12,7 @@ Dantotsu (Kotlin, Gradle KTS, AGP 9.5.1, Gradle 9.9.0, JDK 21, módulo único `:
 - **Cosas de Dantotsu que NO se renombran a propósito**: esquema `dantotsu://` (redirección del login de AniList/MAL/Discord), nombres internos de preferencias/acciones (`ani.dantotsu.*`) y carpetas de descargas hasta decidir lo contrario.
 - **Actualizaciones**: `src/fdroid/.../AppUpdater.kt` lee `https://api.github.com/repos/<R.string.repo>/releases/latest`, compara la etiqueta (`vX.Y.Z`) con `BuildConfig.VERSION_NAME` y descarga la APK cuya ABI coincide con el dispositivo (nombres `vX.Y.Z-app-fdroid-<abi>-release.apk`). Requiere Releases públicas.
 - **Iconos**: foreground/monocromo PNG en `drawable-nodpi`, fondo adaptativo `#0A0E0F`, notificación en `drawable-*dpi/notification_icon.png`. `anim_splash` debe seguir siendo `Animatable` (MainActivity y SettingsActivity hacen `as Animatable`).
+- **Diagnóstico**: `util/EarlyCrashDump.kt` (instalado en `App.attachBaseContext` y llamado desde `FinalExceptionHandler`) guarda el stack trace en Descargas/Kuma-crash.txt vía MediaStore (API 29+) o en la carpeta externa de la app (API 26-28). No envía datos a ningún sitio.
 - Los workflows (`.github/workflows/`) se editan a mano: el token de Actions no puede modificarlos. Las entregas ZIP los rechazan.
 - Scripts de CI en `ci/` (no `scripts/`, que está en `.gitignore`).
 

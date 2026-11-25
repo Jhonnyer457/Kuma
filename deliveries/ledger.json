@@ -18,5 +18,15 @@
     "sha256": "a47a3c58a67b41508582797cfa527262308c6545fec1d5334fada317f6aa0127",
     "fecha": "2026-11-25 05:32 UTC",
     "archivo": "deliveries/processed/entrega-002_v0.2.0_rebranding-kuma.zip"
+  },
+  {
+    "entrega": 3,
+    "version": "0.2.1",
+    "tag": "v0.2.1",
+    "tipo": "incremental",
+    "titulo": "Diagnostico del cierre al arrancar (volcado de error a Descargas)",
+    "sha256": "0b44063aacf49c89e111f18fd4af4bdfc0a59130689c04d043662983b89dd8f5",
+    "fecha": "2026-11-25 06:02 UTC",
+    "archivo": "deliveries/processed/entrega-003_v0.2.1_diagnostico.zip"
   }
 ]
