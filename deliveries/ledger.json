@@ -48,5 +48,15 @@
     "sha256": "14b51a9dad81c789bc26a3241a3116582dd82cfa7baf95a2ba518bdb0987ce41",
     "fecha": "2026-11-25 10:25 UTC",
     "archivo": "deliveries/processed/entrega-005_v0.3.0_identidad-kuma.zip"
+  },
+  {
+    "entrega": 6,
+    "version": "0.4.0",
+    "tag": "v0.4.0",
+    "tipo": "incremental",
+    "titulo": "Kuma en espanol: traduccion de la interfaz",
+    "sha256": "748f44bceea8d9795539c62d799b77751e8677f4a37e58202a49d8ceecfd4c77",
+    "fecha": "2026-11-25 23:20 UTC",
+    "archivo": "deliveries/processed/entrega-006_v0.4.0_espanol.zip"
   }
 ]

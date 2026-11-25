@@ -1,9 +1,9 @@
 # Estado del proyecto
 
 <!-- AUTO:START -->
-- Última entrega: 005 — Identidad Kuma: carpetas, copias de seguridad, textos y sin donaciones
-- Última versión: 0.3.0 (`v0.3.0`)
-- Integrada: 2026-11-25 10:25 UTC
+- Última entrega: 006 — Kuma en espanol: traduccion de la interfaz
+- Última versión: 0.4.0 (`v0.4.0`)
+- Integrada: 2026-11-25 23:20 UTC
 <!-- AUTO:END -->
 
 ## Terminado
@@ -18,7 +18,8 @@
 - Textos visibles: `app_name`, `repo`, `github`, "Read/Watch/Stream on Kuma", "Kuma Profile" y etiquetas del manifiesto.
 
 - Cierre al arrancar **resuelto** (entrega 003 permitió diagnosticarlo): R8 eliminaba clases de ML Kit; se corrigió con reglas en `app/proguard-rules.pro` (arreglo del usuario).
-- Limpieza de identidad (entrega 005, **sin compilar todavía**): carpetas y copias de seguridad con nombre Kuma, textos visibles, donaciones ocultas.
+- Limpieza de identidad (entrega 005, **probada: funciona**): carpetas y copias de seguridad con nombre Kuma, textos visibles, donaciones ocultas.
+- Traducción al español (entrega 006, **sin compilar todavía**): `values-es/strings.xml` con 1.191 textos y 9 listas desplegables; el teléfono en español muestra la app en español.
 
 ## En desarrollo
 - Nada.
@@ -27,6 +28,8 @@
 Ver `TODO.md`.
 
 ## Problemas conocidos
+- Quedan en inglés unos 300 mensajes escritos directamente en el código (avisos, errores, algunos diálogos). Se traducen en la entrega 007.
+- Los textos largos de las preguntas frecuentes mencionan funciones de Dantotsu tal cual (traducidos, sin enlaces a su Discord).
 - Las descargas, capturas y copias de seguridad ahora usan la carpeta `Kuma`; lo que ya estuviera en `Dantotsu/` hay que moverlo a mano.
 - El actualizador solo funciona si las Releases de `Jhonnyer457/Kuma` son públicas (con el repo privado la API devuelve 404).
 - Instalar Kuma no sustituye a Dantotsu: son apps distintas (otro paquete y otra firma). La instalación anterior `ani.dantotsu` (si existe) hay que desinstalarla a mano.
@@ -34,4 +37,4 @@ Ver `TODO.md`.
 - El inicio de sesión de AniList/MAL usa el esquema `dantotsu://` y el cliente de Dantotsu a propósito (cambiarlo rompería el login).
 
 ## Próxima etapa
-Traducción completa al español (entrega 006).
+Entrega 007: mensajes del código que siguen en inglés (avisos y errores).

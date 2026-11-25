@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.4.0] - 2026-11-25 (entrega 006) — Kuma en espanol: traduccion de la interfaz
+
+### Añadido
+- Traduccion completa al espanol de la interfaz (1.191 textos y 9 listas desplegables): ajustes, listas, lector, reproductor, preguntas frecuentes, avisos y notificaciones
+- La app se muestra en espanol automaticamente cuando el idioma del telefono es espanol
+
+### Cambiado
+- lint.xml ignora MissingTranslation para que textos sin traducir no bloqueen la compilacion
+
 ## [0.3.0] - 2026-11-25 (entrega 005) — Identidad Kuma: carpetas, copias de seguridad, textos y sin donaciones
 
 ### Cambiado
